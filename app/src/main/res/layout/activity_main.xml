@@ -6,32 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:text="MAD_alarm_practical"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
-
-    <com.google.android.material.card.MaterialCardView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="731dp"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="20dp" />
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-    <LinearLayout
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="MAD_alarm_practical"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.145"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.021" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="4dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                tools:layout_editor_absoluteX="41dp"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="350dp"
         android:layout_height="600dp"
@@ -44,8 +53,8 @@
 
         <ImageView
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="324dp"
+            android:layout_height="117dp"
             android:layout_marginHorizontal="0dp"
             android:layout_marginVertical="2dp"
             android:layout_marginTop="60dp"
@@ -57,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            android:text="  Create Alarm Time \n\n\n   By Pressing button you can be create and \n   cancelled. \n\n\n   click currect time by looking below real digital \n   clock"
+            android:text="  Create Alarm Time \n\n   By Pressing button you can be create and \n   cancelled. \n\n   click currect time by looking below real digital \n   clock"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -65,19 +74,60 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:format12Hour="dd-MM-yyyy hh:mm:ss a" />
 
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="7dp"
             android:layout_marginStart="10dp"
             android:text="Create alarm"
             app:icon="@drawable/baseline_add_alarm_24"
             />
 
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="15dp"
+            tools:layout_editor_absoluteX="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="244dp"
+                    android:layout_height="105dp"
+                    android:layout_marginVertical="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/alarm1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Set Alarm Clock"
+                    android:textStyle="bold"/>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Cancle alarm"
+                    app:icon="@drawable/baseline_add_alarm_24" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
