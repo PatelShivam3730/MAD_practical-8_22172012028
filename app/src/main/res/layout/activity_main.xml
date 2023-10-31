@@ -21,11 +21,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:layout_marginTop="16dp"
-                android:text="MAD Alarm Practical"
+                android:text="MAD ALARM PRACTICAl"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.013"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,6 +81,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:layout_margin="20dp"
                             android:padding="10dp"
                             android:textAlignment="center"/>
 
@@ -128,7 +127,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:text="Set Alarm Time:"
                             android:layout_gravity="center"
                             android:textAppearance="?attr/textAppearanceHeadline6"/>
@@ -139,7 +137,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-
+                            android:layout_margin="20dp"
                             android:padding="10dp"
                             android:textAlignment="center"/>
 
@@ -148,7 +146,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Cancel Alarm"
-                            app:icon="@drawable/alarm1"/>
+                            app:icon="@drawable/baseline_add_alarm_24"/>
                     </LinearLayout>
                 </LinearLayout>
 
